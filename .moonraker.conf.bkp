@@ -26,7 +26,7 @@ enable_auto_refresh = True
 
 [update_manager client fluidd]
 type = web
-repo = cadriel/fluidd
+repo = fluidd-core/fluidd
 path = ~/fluidd
 
 [update_manager virtual_leds]
@@ -34,5 +34,13 @@ type = git_repo
 path = ~/klipper-virtual_leds
 origin = https://github.com/MapleLeafMakers/klipper-virtual_leds.git
 is_system_service = False
+primary_branch = main
+
+[update_manager Klipper-Adaptive-Meshing-Purging]
+type = git_repo
+channel = dev
+path = ~/Klipper-Adaptive-Meshing-Purging
+origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
+managed_services = klipper
 primary_branch = main
 
